@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Доставка
+{% endblock title %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4 offset-4 text-center mb-4">
+            <div class="h3 font-weight-bold ">Доставка </div>
+        </div>
+        <div class="col-12 text-center ">
+            <p>
+                <button class="btn btn-secondary w-25" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  Доставка по Сургуту
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p>
+                    Доставка осуществляется в пределах границ Сургута<br>   
+                    По городу Сургут доставка выполняется в единый интервал - с 10.00 до 22.00
+                    <br>Стоимость доставки товара:
+                    Вес до 25 кг. 290 рублей
+                    Вес от 25 кг. и более 490 рублей
+                    </p>
+                </div>
+              </div>
+              <p>
+                <button class="btn btn-secondary w-25 mt-3" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                  Доставка по всей России
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample1">
+                <div class="card card-body">
+                    <p>
+                    Доставка осуществляется в пределах границ России<br>   
+                    По городу Сургут доставка выполняется в единый интервал - с 10.00 до 00:00
+                    <br>Стоимость доставки товара:
+                    Вес до 25 кг. 290 рублей
+                    Вес от 25 кг. и более 490 рублей
+                    </p>
+        </div>
+         
+    </div>
+    <p>
+        <button class="btn btn-secondary w-25 mt-3" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+          Способы оплаты
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample2">
+        <div class="card card-body">
+           <div class="row">
+               <div class="col-4 text-center">
+                        <div class="card" >
+                            <img src="{% static "images/card.jpg" %} " class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Расчёт наличными при получении товара</h5>
+                              <p class="card-text">Оплата наличными при получении товара.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                   </div>
+               </div>
+               <div class="col-4 text-center">
+                <div class="card" >
+                    <img src="{% static "images/card.jpg" %} " class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Оплата с помощью электронного кошелька</h5>
+                      <p class="card-text">Оплата с помощью любого доступного электронного кошелька.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+           </div>
+       </div>
+            <div class="col-4 text-center">
+                <div class="card" >
+                    <img src=" {% static "images/card.jpg" %} " class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Расчёт банковской картой</h5>
+                    <p class="card-text">Расчет банковской картой электронно либо при получении товара.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+        </div>
+        </div>
+           </div>
+        </div>
+      </div>
+
+{% endblock content %}  
+
