@@ -12,3 +12,7 @@ def index(request):
 
 def contacts(request):
     return render(request, 'contacts.html')
+def delivery(request):
+    return render(request, 'delivery.html')
+def login(request):
+    return render(request, 'login.html')

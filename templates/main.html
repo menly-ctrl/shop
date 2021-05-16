@@ -47,11 +47,17 @@
        <div class="row">
           <div class="col-12 shop-item">
              <div class="row mt-4 ml-1">
-                <div class="col-6">
-                   <img src="{% static "images/dnslol.jpg" %}" class="rounded" > 
-                </div>
-                <div class="col-6 ">
-                   <div class="tovar"></div>
+                
+                <div class="col-4">
+                  <div class="card" style="width: 18rem;">
+                  
+                     <div class="card-body">
+                       <h5 class="card-title">Отзыв нашего покупателя</h5>
+                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                       <a href="#" class="card-link">Card link</a>
+                       <a href="#" class="card-link">Another link</a>
+                     </div>
+                   </div>
                 </div>
              </div>
              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -116,7 +122,7 @@
                    <div class="carousel-item">
                       <div class="card d-inline-block" style="width: 30%;">
                          <div class="card" style="width: 18rem;">
-                            <a href="new.html"><img src="/images/" class="card-img-top" alt="..."></a>
+                            <a href="new.html"><img src="{% static "images/nvidia.jpg" %}" class="card-img-top" height="136px" alt="..."></a>
                             <div class="card-body">
                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
@@ -141,11 +147,11 @@
                    </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span style=" background: url({% static 'images/next.svg' %}); transform: rotate(180deg) !important;" class="carousel-control-next-icon mr-5" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span style=" background: url({% static 'images/next.svg' %}); " class="carousel-control-next-icon ml-5" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
                 </a>
              </div>

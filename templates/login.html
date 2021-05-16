@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Войти 
+{% endblock title %}
+
+{% block content %}
+
+
+<div class="container mt-5">
+    <div class="row">
+       <div class="col-2 col-lg-3"></div>
+       <div class="col-8 col-lg-6 reg-block pl-5 pb-5 pr-5 pt-4">
+          <div class="reg text-center mb-4"> Регистрация </div>
+          <div class="form-input">
+             <label for="formGroupExampleInput"></label>
+             <input type="text" class="form-control" id="nameInput" placeholder="Имя">
+          </div>
+          <div class="form-input">
+             <label for="exampleFormControlInput1"></label>
+             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Почта">
+          </div>
+          <div class="form-input mb-1">
+             <label for="exampleFormControlInput1"></label>
+             <input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
+          </div>
+          <div class="mt-2 d-flex justify-content-center" >
+             <button class="reg-btn" onclick="password_check();">Регистрация</button>
+          </div>
+       </div>
+    </div>
+ </div>
+
+ 
+ {% endblock content %}  
+ 
