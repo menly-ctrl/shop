@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+    Гаджеты
+{% endblock title %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-2">
+       <div class="left-menu">
+          <div class="row">
+             <div class="col-12 left-menu_item">
+                <img src="{% static "images/mobile.svg" %}" width="50" height="50">
+                <a href="{% url 'gadget_page' %}" href="gadget.html">Гаджеты</a>
+             </div>
+          </div>
+          <div class="row">
+             <div class="col-12 left-menu_item">
+                <img src="{% static "images/desktop.svg" %}" width="50" height="50">
+                <a href="item-2.html">Компьютеры</a>
+             </div>
+          </div>
+          <div class="row">
+             <div class="col-12 left-menu_item">
+                <img src="{% static "images/projector-screen.svg" %}" width="50" height="50">
+                <a href="item-3.html"> Офисная техника </a>
+             </div>
+          </div>
+          <div class="row">
+             <div class="col-12 left-menu_item">
+                <img src="{% static "images/washing-machine.svg" %}" width="50" height="50">
+                <a href="item-4.html">Бытовая техника </a>
+             </div>
+          </div>
+          <div class="row" margim>
+             <div class="col-12 left-menu_item">
+                <img src="{% static "images/watch.svg" %}" width="50" height="50">
+                <a href="item-5.html"> Аксессуары</a> 
+             </div>
+          </div>
+       </div>
+    </div>
+
+<div  class="col-6">
+    <div class="row">
+       <div class="col-12 shop-item text-center ">
+        <div class="card mt-4 ml-3" style="width: 18rem;">
+            <img src="{% static "images/smaart.jpg" %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Смартфоны</p>
+            </div>
+          </div>
+          
+       
+    
+     </div>
+     </div>
+</div>
+
+{% endblock content %}  
+

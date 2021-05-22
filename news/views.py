@@ -16,3 +16,5 @@ def delivery(request):
     return render(request, 'delivery.html')
 def login(request):
     return render(request, 'login.html')
+def gadget(request):
+    return render(request, 'gadget.html')

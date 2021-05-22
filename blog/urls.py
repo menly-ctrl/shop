@@ -27,6 +27,7 @@ urlpatterns = [
     path('contacts/', views.contacts, name="contacts_page"),
     path('delivery/', views.delivery, name="delivery_page"),
     path('login/', views.login, name="login_page"),
+    path('gadget/', views.gadget, name="gadget_page"),
 ]
 
 if settings.DEBUG:
