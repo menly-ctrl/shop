@@ -15,7 +15,7 @@ def index(request):
     data = {
         'items' : items_list,
     }
-    print(data)
+
     return render(request, 'main.html', context=data)
 
 
