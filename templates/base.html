@@ -19,29 +19,41 @@
    </head>
    <body>
       {% block navigation %}
-      <div class="navigation">
-         <div>
-            <a href="{% url 'main_page' %}">
-                Buy-it
-            </a>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+         <a class="navbar-brand" href="">Buy-it</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+               <a class="nav-link" href="{% url 'main_page' %}">Главная <span class="sr-only">(current)</span></a>
+             </li>
+             
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Категории
+               </a>
+               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <a class="dropdown-item" href="{% url 'gadget_page' %}">Гаджеты</a>
+                 <a class="dropdown-item" href="">Гаджеты</a>
+                 <a class="dropdown-item" href="">Гаджеты</a>
+                 <a class="dropdown-item" href="">Гаджеты</a>
+                 <a class="dropdown-item" href="">Гаджеты</a>
+             </li>
+             <li class="nav-item active">
+               <a class="nav-link" href="{% url 'contacts_page' %}">О магазине</a>
+             </li>
+           </ul>
+           <form class="form-inline my-2 my-lg-0">
+             <input class="form-control mr-sm-2" type="search" placeholder="Что ищем?" aria-label="Search">
+             <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Поиск</button>
+           </form>
          </div>
-         <div>
-            <a href="{% url 'contacts_page' %}" href="contacts.html">Контакты</a>
-         </div>
-         <div>
-            <a href="{% url 'delivery_page'%}" href="delivery.html">Доставка</a>
-         </div>
-         <div>
-            <a href="new.html">Новинки</a>
-         </div>
-         <div class="shop">
-            <input type="text" class="search-input" placeholder="Search" class="search">
-            <div class="login"> 
-               <a href="{% url 'login_page'%}"> login </a>
-            </div>
-            <img src="{% static "images/shopping-cart.svg" %}" width="40" height="40" class="shop_img">
-         </div>
-      </div>
+       </nav>
+     
       {% endblock navigation %}
 
       {% block content %}

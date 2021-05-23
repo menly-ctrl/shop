@@ -1,14 +1,23 @@
 from django.shortcuts import render
-from .models import Items
+from .models import Item
 
 def index(request):
-    items_list = Items.objects.all()
-    data = {}
-    tmp = []
-    for el in items_list:
-        tmp.append(el)
-    data['names'] = tmp
+    items_query = Item.objects.all()
+    items_list = []
+
+    for el in items_query:
+        tmp = []
+        tmp.append(el.image)
+        tmp.append(el.item_name)
+        tmp.append(el.item_description)
+        tmp.append(el.item_price)
+        items_list.append(tmp)
+    data = {
+        'items' : items_list,
+    }
+    print(data)
     return render(request, 'main.html', context=data)
+
 
 def contacts(request):
     return render(request, 'contacts.html')

@@ -1,8 +1,7 @@
 from django.contrib import admin
-from .models import Items
-# Register your models here.
+from .models import Item
 
-@admin.register(Items)
+@admin.register(Item)
 class ItemsAdmin(admin.ModelAdmin):
     pass
 
